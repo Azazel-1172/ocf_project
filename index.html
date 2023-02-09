@@ -37,9 +37,9 @@
       </section>
 
       <section class="start">
-        <section class="left">
-          <h1 id="緒論">緒論</h1>
+        <section>
           <h3 id="數位安全是什麼？哪裡重要？">數位安全是什麼？哪裡重要？</h3>
+          <hr />
           <p>
             隨著幾乎所有工作都要上網的時代到來，世界上的公民團體也越來越習慣利用數位工具進行倡議。舉凡日常的行政運作、內外人員的往來溝通、勸募、記者會或宣傳，都需要使用到網路設備。然而，我們的數位生活也已經成為駭客的攻擊目標，尤其是由極權國家資助的駭客，更容易針對公民團體，進行竊取或監控的數位攻擊。
           </p>
@@ -52,11 +52,79 @@
           <p>
             這份手冊的目標，就是介紹開放原始碼（開放源碼、開源）的替代工具，令所有人都可以藉此提升基本的數位安全能力。以下先分享一些貫穿全冊的相關概念，再依序介紹安全的瀏覽器、密碼管理器、自己架設雲端硬碟、保護組織網站的幾個方案。
           </p>
+          <section class="section-card">
+            <div class="row">
+              <div class="col-1-of-4">
+                <a href="./server.html">
+                  <div class="card-box">
+                    <img
+                      style="width: 10rem; height: 10rem"
+                      src="./picture/LibreWolf_icon.svg.png"
+                      alt=""
+                    />
+                    <h3 class="card-title">開源與安全的瀏覽器</h3>
+                    <p class="card-ph">是否要接受Cookie?</p>
+                    <p class="card-ph">擔心搜尋紀錄被側錄?</p>
+                    <p class="card-ph">你用的瀏覽器安全嗎?</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-1-of-4">
+                <a href="./KeePassXC.html">
+                  <div class="card-box">
+                    <img
+                      style="width: 10rem; height: 10rem"
+                      src="./picture/KeePass_icon.png"
+                      alt=""
+                    />
+                    <h3 class="card-title">KeePassXC</h3>
+                    <p class="card-ph">又忘記密碼了？</p>
+                    <p class="card-ph">密碼太多太繁雜?</p>
+                    <p class="card-ph">還在使用同一組密碼？</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-1-of-4">
+                <a href="./Nextcloud.html">
+                  <div class="card-box">
+                    <img
+                      style="width: 10rem; height: 10rem"
+                      src="./img/71278-icons-android-computer-nextcloud-free-transparent-image-hq.png"
+                      alt=""
+                    />
+                    <h3 class="card-title">Nextcloud</h3>
+                    <p class="card-ph">協作時需要檔案傳輸?</p>
+                    <p class="card-ph">想對資料有完整掌控權?</p>
+                    <p class="card-ph">想在各裝置同步&管理檔案?</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-1-of-4">
+                <a href="./Deflect&eQpress.html">
+                  <div class="card-box">
+                    <img
+                      style="width: 10rem; height: 10rem"
+                      src="./picture/Deflect.png"
+                      alt=""
+                    />
+                    <h3 class="card-title">Deflect & eQpress</h3>
+                    <p class="card-ph">網站有被攻擊的疑慮?</p>
+                    <p class="card-ph">網站沒有專業技術團隊維護?</p>
+                    <p class="card-ph">想避免遭受DDoS、資安攻擊?</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
           <h3 id="開源的工具為什麼對數位安全來說很重要？">
             開源的工具為什麼對數位安全來說很重要？
           </h3>
+          <hr />
           <p>
-            關於前述提到的<strong style="font-size: 1.2rem"
+            關於前述提到的<strong style="font-size: 2rem"
               >開放原始碼、開源</strong
             >，直接意思就是將原始程式碼開放出來，日常中我們在電腦或手機使用的所有硬體、軟體、網站、服務都是建立在一大堆程式碼之上，這些程式碼也就是英文的
             code，並且決定了軟硬體怎麼運作。然而，很多程式碼都被企業基於營利考量隱藏起來，不提供人們公開檢視，這也形成了一定的安全或隱私漏洞，畢竟我們無從得知哪些程式碼有問題、或有後門偷偷將我們的資料傳送出去。
@@ -71,6 +139,7 @@
           <h3 id="雲端是什麼？伺服器是什麼？它對隱私及安全而言有什麼影響？">
             雲端是什麼？伺服器是什麼？它對隱私及安全而言有什麼影響？
           </h3>
+          <hr />
           <p>
             「雲端」、「伺服器」這可能是你偶爾聽見的科技詞彙，但是它們其實就是同樣的意思，座落在地球上某處的電腦主機。在你需要的時候，使用網路將資料從雲端伺服器傳到你的電腦或手機，或可以反過來讓你存放資料。例如
             Google
@@ -83,6 +152,7 @@
           <h3 id="什麼是網域？跟網址有什麼差別嗎？公民團體需要自己的網域嗎？">
             什麼是網域？跟網址有什麼差別嗎？公民團體需要自己的網域嗎？
           </h3>
+          <hr />
           <p>
             我們每天都在瀏覽器看到的網址，就如同地圖上的地址一樣，會告訴電腦該去哪裡取得資料、將檔案傳到哪裡。例如
             drive.google.com 就是 Google 雲端硬碟的網址，前面的 drive
@@ -93,275 +163,7 @@
             在數位世界裡，網域就跟辦公室一樣是需要租賃的，才能向全世界的電腦宣告這一串網址屬於誰。就如同一個組織需要承租辦公室提供客戶造訪，一個組織的網站也需要租賃一個網域，才能提供所有人造訪自己的網站。這也是在網路世界建立信任關係的重要關鍵，有自己的網域，才能令使用者確保自己正在造訪正牌的辦公室，而不是駭客偷偷架設的冒牌貨。
           </p>
         </section>
-        <section class="right">
-          <ul class="right">
-            <li>
-              <a href="#數位安全是什麼？哪裡重要？"
-                >數位安全是什麼？哪裡重要？</a
-              >
-            </li>
-
-            <li>
-              <a href="#開源的工具為什麼對數位安全來說很重要？"
-                >開源的工具為什麼對數位安全來說很重要？</a
-              >
-            </li>
-            <li>
-              <a
-                href="#雲端是什麼？伺服器是什麼？它對隱私及安全而言有什麼影響？"
-                >雲端是什麼？伺服器是什麼？它對隱私及安全而言有什麼影響？</a
-              >
-            </li>
-            <li>
-              <a
-                href="#什麼是網域？跟網址有什麼差別嗎？公民團體需要自己的網域嗎？"
-                >什麼是網域？跟網址有什麼差別嗎？公民團體需要自己的網域嗎？</a
-              >
-            </li>
-          </ul>
-        </section>
       </section>
-      <section class="section-features">
-        <div class="row">
-          <div class="col-1-of-4">
-            <a href="./server.html">
-              <div class="card-box">
-                <img
-                  style="width: 10rem; height: 10rem"
-                  src="./picture/LibreWolf_icon.svg.png"
-                  alt=""
-                />
-                <h3>開源與安全的瀏覽器</h3>
-                <p>
-                  若輕忽瀏覽器的選擇，輕則被網站收錄個人資料、洩露使用者的數位足跡，嚴重則導致帳號、密碼、金融資訊遭竊盜，甚至被監控瀏覽的畫面、傳輸的對話內容
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-1-of-4">
-            <a href="./KeePassXC.html">
-              <div class="card-box">
-                <img
-                  style="width: 10rem; height: 10rem"
-                  src="./picture/KeePass_icon.png"
-                  alt=""
-                />
-                <h3>KeePassXC</h3>
-                <p>
-                  又忘記密碼了？還在每個社交帳號、購物網站、遊戲裡面使用同一個密碼？有重要資料放在不同的雲端硬碟帳號？
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-1-of-4">
-            <a href="./Nextcloud.html">
-              <div class="card-box">
-                <img
-                  style="width: 10rem; height: 10rem"
-                  src="./img/71278-icons-android-computer-nextcloud-free-transparent-image-hq.png"
-                  alt=""
-                />
-                <h3>Nextcloud</h3>
-                <p>
-                  Nextcloud
-                  相對於前述的商業雲端硬碟服務，是以開放原始碼的軟體為基礎、由志工社群自下而上開發起來的雲端硬碟服務。這不僅可以讓所有人檢視軟體運作的原始碼細節是否安全，也不會如同
-                  Google、 Dropbox
-                  或微軟需要掌握使用者的個人資訊，才可以提供服務。
-                </p>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-1-of-4">
-            <a href="./Deflect&eQpress.html">
-              <div class="card-box">
-                <img
-                  style="width: 10rem; height: 10rem"
-                  src="./picture/Deflect.png"
-                  alt=""
-                />
-                <h3>Deflect & eQpress</h3>
-                <p>
-                  在數位時代，在第一線工作的公民團體，經常會需要架設網站進行倡議。但具有敵意的政府資助駭客，能夠輕易對自行架設的網站做出各式攻擊、入侵。輕則癱瘓網站、阻止訊息傳播；重則植入惡意外掛，盜取使用者的重要資訊
-                </p>
-              </div>
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- <div class="row">
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--0">&nbsp;</div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--0"
-                  >開源與安全的 <br />瀏覽器</span
-                >
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li><a href="./server.html#使用情境_server">使用情境</a></li>
-                  <li><a href="./server.html#使用方式_server">使用方式</a></li>
-                  <li>
-                    <a href="./server.html#下載／安裝流程_server"
-                      >下載/安裝流程</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./server.html#技術支援／求救方法_server"
-                      >技術支援/求救方法</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-0">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only"></p>
-                  <p class="card__price-value"></p>
-                </div>
-                <a href="./server.html" class="btn btn--white">立即前往!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--1">&nbsp;</div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--1"
-                  >KeePassXC <br />密碼管理器</span
-                >
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>
-                    <a href="./KeePassXC.html#使用情境_KeePassXC">使用情境</a>
-                  </li>
-                  <li>
-                    <a href="./KeePassXC.html#使用方式_KeePassXC">使用方式</a>
-                  </li>
-                  <li>
-                    <a href="./KeePassXC.html#下載／安裝流程_KeePassXC"
-                      >下載/安裝流程</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./KeePassXC.html#技術支援／求救方法_KeePassXC"
-                      >技術支援/求救方法</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-1">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only"></p>
-                  <p class="card__price-value"></p>
-                </div>
-                <a href="./KeePassXC.html" class="btn btn--white">立即前往!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--2">&nbsp;</div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--2"
-                  >Nextcloud <br />
-                  儲存空間</span
-                >
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>
-                    <a href="./Nextcloud.html#使用情境_Nextcloud">使用情境</a>
-                  </li>
-                  <li>
-                    <a href="./Nextcloud.html#使用方式_Nextcloud">使用方式</a>
-                  </li>
-                  <li>
-                    <a href="./Nextcloud.html#下載／安裝流程_Nextcloud"
-                      >下載/安裝流程</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./Nextcloud.html#技術支援／求救方法_Nextcloud"
-                      >技術支援/求救方法</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-2">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only"></p>
-                  <p class="card__price-value"></p>
-                </div>
-                <a href="./Nextcloud.html" class="btn btn--white">立即前往!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-1-of-3">
-          <div class="card">
-            <div class="card__side card__side--front">
-              <div class="card__picture card__picture--3">&nbsp;</div>
-              <h4 class="card__heading">
-                <span class="card__heading-span card__heading-span--3"
-                  >Deflect & eQpress
-                </span>
-              </h4>
-              <div class="card__details">
-                <ul>
-                  <li>
-                    <a href="./Deflect&eQpress.html#使用情境_Deflect"
-                      >使用情境</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./Deflect&eQpress.html#使用方式_Deflect"
-                      >使用方式</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./Deflect&eQpress.html#申請／取得流程_Deflect"
-                      >下載/安裝流程</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./Deflect&eQpress.html#技術支援／求救方法_Deflect"
-                      >技術支援/求救方法</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="card__side card__side--back card__side--back-3">
-              <div class="card__cta">
-                <div class="card__price-box">
-                  <p class="card__price-only"></p>
-                  <p class="card__price-value"></p>
-                </div>
-                <a href="./Deflect&eQpress.html" class="btn btn--white"
-                  >立即前往!</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </main>
   </body>
   <script src="./app.js"></script>

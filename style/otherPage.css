@@ -5,13 +5,17 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+body {
+  font-weight: 550;
+  line-height: 1.7;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 1rem;
 }
 
@@ -25,6 +29,7 @@ h3 {
 
 p {
   font-size: 1rem;
+  margin: 1rem;
 }
 
 body {
@@ -36,10 +41,17 @@ main {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.goback-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
 }
 
 section.backImage {
@@ -58,6 +70,11 @@ section.backImage {
   text-align: center;
 }
 
+section.start {
+  display: flex;
+  flex-direction: row;
+}
+
 .logo {
   height: 3rem;
   position: absolute;
@@ -65,7 +82,6 @@ section.backImage {
   right: 2rem;
 }
 
-section.left,
 section.right {
   padding: 1rem;
 }
@@ -91,6 +107,17 @@ td {
   padding: 0.5rem;
 }
 
+th {
+  background-color: rgb(91, 155, 213);
+  color: #ffffff;
+}
+
+td {
+  background-color: rgb(200, 222, 242);
+  color: black;
+  text-align: center;
+}
+
 table tr td {
   padding: 1rem;
   text-align: center;
@@ -110,6 +137,7 @@ ol li {
 
 ol.en {
   list-style-type: lower-latin;
+  margin-left: 1rem;
 }
 
 ul.right {
@@ -167,7 +195,7 @@ a.btn {
 a.goback {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 0.5rem;
   display: inline-block;
   border-radius: 10rem;
   position: fixed;
@@ -201,19 +229,10 @@ a.btn:hover {
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  -webkit-animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-          animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
-@-webkit-keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
 @keyframes typing {
   from {
     width: 0;
@@ -223,14 +242,6 @@ a.btn:hover {
   }
 }
 /* The typewriter cursor effect */
-@-webkit-keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
 @keyframes blink-caret {
   from, to {
     border-color: transparent;
@@ -242,8 +253,9 @@ a.btn:hover {
 .backhome {
   color: #000000;
   background-color: #fff;
-  padding: 1rem;
-  font-size: 1.5rem;
+  padding: 0.5rem;
+  width: 5rem;
+  font-size: 1rem;
   border-radius: 10rem;
 }
 
@@ -254,4 +266,17 @@ a.btn:hover {
 .backhome:hover {
   color: #ffffff;
   background-color: #000000;
+}
+
+ul.left p,
+ol.left p {
+  margin-left: 2rem;
+}
+ul.left img,
+ol.left img {
+  margin-left: 2rem;
+}
+
+hr {
+  border: #000000 solid 1px;
 }/*# sourceMappingURL=otherPage.css.map */
