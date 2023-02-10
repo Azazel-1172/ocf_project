@@ -293,4 +293,11 @@ ol.left img {
 
 hr {
   border: #000000 solid 1px;
+}
+
+section.img img {
+  width: 45vw;
+}
+section.img img:first-child {
+  margin-right: 1rem;
 }/*# sourceMappingURL=otherPage.css.map */
