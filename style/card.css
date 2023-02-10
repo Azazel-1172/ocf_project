@@ -10,7 +10,7 @@
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   html {
     font-size: 56.25%;
   }
@@ -39,17 +39,17 @@ html {
     top: 0;
     right: 0;
   }
-}
+} */
 body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* padding: 3rem; */
 }
-@media only screen and (max-width: 56.25em) {
+/* @media only screen and (max-width: 56.25em) {
   body {
     padding: 0;
   }
-}
+} */
 
 body {
   font-family: "Lato", sans-serif;
@@ -412,12 +412,7 @@ body {
 .card-title {
   font-size: 2rem;
 }
-@media only screen and (max-width: 56.25em) {
-  .footer__copyright {
-    width: 100%;
-    float: none;
-  }
-}
+
 .row {
   max-width: 125rem;
   margin: 0 auto;
