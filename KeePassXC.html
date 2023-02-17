@@ -14,7 +14,7 @@
         ><img class="logo" src="./picture/icon_white.png" alt=""
       /></a>
       <div class="typewriter">
-        <h1>安全保管所有密碼：KeePassXC</h1>
+        <h3>安全保管所有密碼：KeePassXC</h3>
       </div>
     </section>
     <main>
@@ -23,19 +23,21 @@
       </div>
       <section class="start">
         <section class="left">
-          <!-- <h1>一次保管所有的密碼：KeePassXC 密碼管理器</h1> -->
           <h3 id="使用情境_KeePassXC">使用情境</h3>
           <hr />
-          <ol class="left">
+          <ul class="left">
+            <li>取代瀏覽器內建密碼管理器</li>
+            <p>
+              如同將不同功能的事情、交給不同瀏覽器處理的分隔原則，本文也建議只將密碼交給獨立運作的密碼管理器，避免與瀏覽器的直接關聯，減少雞蛋集中在籃子裡的風險。這雖然會減損一點便利，但是
+              KeepassXC
+              已經提供直接複製帳號名稱、密碼的功能，使用者還是可以省去大量輸入帳密的時間。
+            </p>
+            <!-- <img src="./picture/autoInput.png" alt="" /> -->
             <li>密碼真的又多又雜</li>
-            <p>
-              為了保障基本的帳號使用安全，大多數人都知道要設定複雜的密碼、經常更換密碼、不要四處使用同一個密碼，但實際執行方面極其困難。畢竟每想一套複雜的密碼都要時間與心力去記憶，而且也不見得能夠及時更換所有帳號的密碼，更遑論確保自己知道每個不同帳號使用哪些不同的密碼。這些密碼管理的成本經常會隨著工作內容的敏感程度，而隨之劇增。
-            </p>
+            <img src="./picture/key.svg" alt="" />
             <li>無法自己記住每一個密碼，直接交給管理器更簡單</li>
-            <p>
-              密碼管理器的功能可以說是為此而生，將複雜的思考與記憶工作交給軟體，自己只要負責一套最關鍵的主要密碼（也可以再加上雙重驗證），就可以完成這項艱巨的任務。
-            </p>
-          </ol>
+            <img src="./picture/key2.svg" alt="" />
+          </ul>
         </section>
         <section class="right">
           <ul class="right">
@@ -46,8 +48,13 @@
 
               <ul>
                 <li><a href="#使用情境_KeePassXC">使用情境</a></li>
-                <li><a href="#使用方式_KeePassXC">使用方式</a></li>
                 <li><a href="#下載／安裝流程_KeePassXC">下載/安裝流程</a></li>
+                <li><a href="#開始使用">開始使用</a></li>
+                <li>
+                  <a href="#在新電腦或是其他裝置上設定_KeePassXC"
+                    >在新電腦或是其他裝置上設定</a
+                  >
+                </li>
                 <li>
                   <a href="#技術支援／求救方法_KeePassXC">技術支援/求救方法</a>
                 </li>
@@ -57,90 +64,55 @@
           </ul>
         </section>
       </section>
-      <section class="img">
-        <img src="./picture/key.svg" alt="" />
-        <img src="./picture/key2.svg" alt="" />
-      </section>
       <section class="start">
         <section class="left">
-          <ol start="3">
-            <li>取代瀏覽器內建密碼管理器</li>
+          <h3 id="下載／安裝流程_KeePassXC">下載/安裝流程</h3>
+          <hr />
+          <ul class="left">
+            <li>
+              在電腦安裝
+              <p>
+                切記，下載工具程式務必要從官方網站下載，以避免下載到來路不明、被暗藏後門的軟體。KeePassXC
+                的官方網站是
+                <a href="https://keepassxc.org/">https://keepassxc.org/</a>
+                ，在首頁就可以看見下載的連結，選擇你的電腦作業系統下載即可。記得，KeePassXC
+                與其它商業密碼管理器不同，是免費提供下載的，如果你發現要註冊、付費，那就肯定搞錯軟體了。
+              </p>
+              <img src="./picture/keypass.svg" alt="" />
+            </li>
+            <li>
+              在手機或平板安裝
+              <p>
+                如果你想安裝 Android 或 iOS
+                （蘋果）的版本，它們跟電腦版本的名稱不一樣。官方網站的指引
+                <a href="https://keepassxc.org/docs/"
+                  >https://keepassxc.org/docs/</a
+                >建議在 Android 使用
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free"
+                  >KeePassDX</a
+                >and
+                <a
+                  href="https://play.google.com/store/apps/details?id=keepass2android.keepass2android"
+                >
+                  KeePass2Android</a
+                >，在 iOS 則是
+                <a
+                  href="https://itunes.apple.com/us/app/strongbox-password-safe/id897283731"
+                  >Strongbox</a
+                >and
+                <a
+                  href="https://apps.apple.com/us/app/keepassium-keepass-passwords/id1435127111"
+                  >KeePassium</a
+                >。他們都是 KeePass
+                家族的成員，所以可以互通使用，管理密碼的方式也相近。但是本文後續以介紹電腦裝置上面的
+                KeePassXC 為主。
+              </p>
+            </li>
+          </ul>
 
-            <p>
-              如同將不同功能的事情、交給不同瀏覽器處理的分隔原則，本文也建議只將密碼交給獨立運作的密碼管理器，避免與瀏覽器的直接關聯，減少雞蛋集中在籃子裡的風險。這雖然會減損一點便利，但是
-              KeepassXC
-              已經提供直接複製帳號名稱、密碼的功能，使用者還是可以省去大量輸入帳密的時間。
-            </p>
-          </ol>
-          <h3 id="使用方式_KeePassXC">使用方式</h3>
-          <hr />
-          <p>
-            如果你是個密碼很多的人，那也許你曾經考慮將所有密碼都寫在同一張紙上、鎖在櫃子裡，但因為這很不方便，而且要是紙張遺失會不堪設想，因此作罷。
-          </p>
-          <p>
-            現在，有人解決你的煩惱了。KeePassXC
-            裡面的密碼庫，其實就是一張記載密碼的清單，只是它透過密碼管理器嚴格加密。只要你使用<strong
-              style="color: red; font-size: 1.2rem"
-              >主要密碼</strong
-            >解鎖之後，就可以看到你已存的各類服務帳密資訊。
-          </p>
-          <p>
-            而且，KeePassXC
-            是已經繁體中文化的軟體，使用者可以輕易上手。初次設定完成後，以後只需要在主要頁面輸入主要密碼，就可以透過一張清單管理所有的密碼。而且沒腦想強密碼也沒關係，KeePassXC
-            可以協助你用亂數產生不一樣、足夠複雜的密碼，輕鬆讓你所有帳號都使用不同的密碼還不用腦記，未來也可以隨時新增或管理。
-          </p>
-          <p>
-            無論如何，千萬記得要記得主要密碼，並且保管好電腦裡的密碼庫檔案（也就是
-            .kdbx 檔）。你可以在不同地方備份它，或是使用前文提及的 Android 或
-            iOS 版本的 KeePass
-            家族成員來開啟它。一旦忘記主要密碼，或遺失了資料庫檔案，你的諸多密碼就會消失，戒之慎之！
-          </p>
-          <h1 id="下載／安裝流程_KeePassXC">下載/安裝流程</h1>
-          <hr />
-          <h3>在電腦安裝</h3>
-          <p>
-            切記，下載工具程式務必要從官方網站下載，以避免下載到來路不明、被暗藏後門的軟體。KeePassXC
-            的官方網站是
-            <a href="https://keepassxc.org/">https://keepassxc.org/</a>
-            ，在首頁就可以看見下載的連結，選擇你的電腦作業系統下載即可。記得，KeePassXC
-            與其它商業密碼管理器不同，是免費提供下載的，如果你發現要註冊、付費，那就肯定搞錯軟體了。
-          </p>
-          <img src="./picture/keypass.svg" alt="" />
-          <p>
-            下載後，就可以直接點擊安裝檔案、按照軟體提示的順序進行。安裝完成後，就可以著手進入使用環節。
-          </p>
-          <h3>在手機或平板安裝</h3>
-          <p>
-            如果你想安裝 Android 或 iOS
-            （蘋果）的版本，它們跟電腦版本的名稱不一樣。官方網站的指引
-            <a href="https://keepassxc.org/docs/">https://keepassxc.org/docs/</a
-            >建議在 Android 使用
-            <a
-              href="https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free"
-              >KeePassDX</a
-            >and
-            <a
-              href="https://play.google.com/store/apps/details?id=keepass2android.keepass2android"
-            >
-              KeePass2Android</a
-            >，在 iOS 則是
-            <a
-              href="https://itunes.apple.com/us/app/strongbox-password-safe/id897283731"
-              >Strongbox</a
-            >and
-            <a
-              href="https://apps.apple.com/us/app/keepassium-keepass-passwords/id1435127111"
-              >KeePassium</a
-            >。他們都是 KeePass
-            家族的成員，所以可以互通使用，管理密碼的方式也相近。但是本文後續以介紹電腦裝置上面的
-            KeePassXC 為主。
-          </p>
           <h3>首次設定</h3>
-          <p>
-            KeePassXC
-            的運作方式是，經由這個軟體產生一個加密的文件檔案，稱為資料庫（副檔名會是
-            .kdbx），只能由使用者設定的主要密碼解鎖。當你首次打開它，軟體會詢問你是否「建立新資料庫」或是「開啟現有資料庫」，或是從其它的密碼管理器匯入資料庫。如果你是第一次使用、還未存入任何帳密，或是要設定另外一組帳密儲存，以下為「建立新資料庫」的流程：
-          </p>
+          <hr />
           <ol class="left">
             <li>為新的密碼資料庫命名，可以加上描述，以免自己遺忘內容</li>
             <img src="./picture/set_keyword.svg" alt="" />
@@ -154,11 +126,9 @@
             </li>
             <img src="./picture/set_keyword3.svg" alt="" />
           </ol>
-          <h3>開始使用</h3>
-          <p>
-            當你每次打開 KeePassXC
-            ，你就需要使用主要密碼對資料庫解鎖。解鎖之後，可以進行以下動作：
-          </p>
+
+          <h3 id="開始使用">開始使用</h3>
+          <hr />
           <ol class="left">
             <li>
               首頁裏頭條列各個帳號的管理項目，點擊要尋找密碼的帳號，就可以觀看或準備複製貼上密碼
@@ -195,14 +165,11 @@
                 </li>
               </ol>
             </li>
-            <p>
-              當你使用過前述 1~4
-              的步驟，就已經掌握密碼管理器的主要功能，可以讓你的生活及工作更輕鬆也更安全。
-            </p>
           </ol>
           <h3 id="在新電腦或是其他裝置上設定_KeePassXC">
             在新電腦或是其他裝置上設定
           </h3>
+          <hr />
           <ol class="left">
             <li>
               換了新的電腦，要繼續用
@@ -219,7 +186,7 @@
               >，即可開啟使用。
             </li>
           </ol>
-          <h1 id="技術支援／求救方法_KeePassXC">技術支援/求救方法</h1>
+          <h3 id="技術支援／求救方法_KeePassXC">技術支援/求救方法</h3>
           <hr />
           <p>
             如果你希望再加一道主要密碼以外的保護措施，確保即使你的整台電腦被盜走，也沒有機會開啟密碼資料庫。那麼可以考慮使用

@@ -278,9 +278,14 @@ a.btn:hover {
   background-color: #000000;
 }
 
+ul.left li,
+ol.left li {
+  font-size: 1.2rem;
+}
 ul.left p,
 ol.left p {
   margin-left: 2rem;
+  font-size: 1rem;
 }
 ul.left img,
 ol.left img {
